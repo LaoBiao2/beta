@@ -18,17 +18,17 @@
                 </ul>
             </div>
             <p>必达广告 - 具有沟通力的整合营销创意</p>
-            <p class="p-bottom clearfix">
+            <div class="p-bottom clearfix">
                 <span class="span-copy fl">Copyright © 2013-2018 BETAAD  All Rights Reserved.</span>
                 <ul class="fr">
                     <li><span>Links:</span></li>
-                    <li><nuxt-link to="">公众号转让</nuxt-link></li>
-                    <li><nuxt-link to="">宣传片拍摄</nuxt-link></li>
-                    <li><nuxt-link to="">信息流广告</nuxt-link></li>
-                    <li><nuxt-link to="">创意项目</nuxt-link></li>
-                    <li><nuxt-link to="">资源广告</nuxt-link></li>
+                    <li><nuxt-link to="/">公众号转让</nuxt-link></li>
+                    <li><nuxt-link to="/">宣传片拍摄</nuxt-link></li>
+                    <li><nuxt-link to="/">信息流广告</nuxt-link></li>
+                    <li><nuxt-link to="/">创意项目</nuxt-link></li>
+                    <li><nuxt-link to="/">资源广告</nuxt-link></li>
                 </ul>
-            </p>
+            </div>
         </div>
 	</div>
 </template>
@@ -72,6 +72,8 @@
     }
 	.p-bottom {
         margin-top: 20px;
+        font-size: 14px;
+        color: #999;
         ul {
             font-size: 0;
             li {

@@ -1,6 +1,7 @@
 <template>
     <div>
 		<vue-header />
+		<custom-service />
         <nuxt/>
 		<vue-footer />
   </div>
@@ -10,11 +11,13 @@
 import '~/static/common.css';
 import VueHeader from "~/components/VueHeader.vue";
 import VueFooter from "~/components/VueFooter.vue";
+import CustomService from "~/components/CustomService.vue";
 export default {
     
     components: {
         VueHeader,
         VueFooter,
+        CustomService,
     },
 }
 </script>

@@ -71,18 +71,19 @@
 				<li><nuxt-link to="/about">关于我们</nuxt-link></li> -->
                 
 				<li v-for="(nav, key) in navList" :key="key">
-                    <nuxt-link :to="nav.addr">{{nav.title}}<i v-if="nav.sub != ''"></i></nuxt-link>
-                    <div class="sub-menu" v-if="nav.sub != ''">
-                        <i></i>
-                        <nuxt-link :to="sub.addr" v-for="(sub, key2) in nav.sub" :key="key2">{{sub.title}}</nuxt-link>
-                    </div>
+                    <nuxt-link :to="nav.addr" class="first-a">{{nav.title}}<i v-if="nav.sub != ''"></i></nuxt-link>
                 </li>
+                <div class="sub-menu" v-if="navList[hoverId].sub != ''">
+                    <i></i>
+                    <nuxt-link :to="sub.addr" v-for="(sub, key2) in navList[hoverId].sub" :key="key2">{{sub.title}}</nuxt-link>
+                </div>
 			</ul>
 		</div>
 	</div>
 </template>
 
 <script>
+import '~/static/animate.css';
 	export default {
         data(){
             return {
@@ -146,7 +147,7 @@
                         sub: []
                     }, {
                         title: '企业建站',
-                        addr: '/test',
+                        addr: '/website',
                         sub: [
                             { title: '网站建设', addr: '/test'},
                             { title: '微官网', addr: '/test'},
@@ -159,10 +160,23 @@
                         addr: '/test',
                         sub: []
                     }, 
-                ]
+                ],
+                hoverId: 0
             }
         },
 		mounted() {
+            $(".VueHeader ul li").hover(function () {
+                // $(this).find(".sub-menu").addClass("animated fadeInUp");
+                // $(this).find(".sub-menu").removeClass("fadeOutDown");
+                var liIndex = $(".VueHeader ul li").index(this);
+                var liWidth = $(".VueHeader ul li").innerWidth();
+                $(".sub-menu").stop(false,true).animate({'left' : (liIndex * liWidth - 18) + 'px'},100);
+                this.hoverId = liIndex;
+                console.log(this.hoverId);
+            },function () {
+                // $(this).find(".sub-menu").removeClass("fadeInUp");
+                // $(this).find(".sub-menu").addClass("animated fadeOutDown");
+            })
 		},
         methods: {
         }
@@ -198,7 +212,6 @@
 			width: 104px;
 			display: inline-block;
 			line-height: 76px;
-            position: relative;
 			a {
 				color: #fff;
                 i {
@@ -206,48 +219,129 @@
                     height: 6px;
                     display: inline-block;
                     vertical-align: middle;
-                    background: url(/images/common/common_icon.png) 0 -15px no-repeat;
+                    background: url(/images/common/common_icon.png) 0 -24px no-repeat;
                     margin-left: 5px;
                 }
 			}
             a.nuxt-link-exact-active {
                 color: #33cde5;
             }
-            .sub-menu {
-                position: absolute;
-                top: 76px;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 135px;
-                background-color: #fff;
-                padding: 14px 0;
-                i {
-                    width: 0;
-                    height: 0;
-                    display: inline-block;
-                    border-width: 9px;
-                    border-style: solid;
-                    border-color: transparent transparent #fff transparent;
-                    position: absolute;
-                    top: -16px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                }
-                a {
-                    font-size: 16px;
-                    color: #999;
-                    line-height: 30px;
-                    display: block;
-                }
-
-            }
 		}
 		li:hover {
-			a {
+			a.first-a {
 				color: #33cde5;
+                i {
+                    background-position-y: -9px;
+                }
 			}
-		}
+            // .sub-menu {
+            //     max-height: 268px;
+            //     i {
+            //         display: inline-block;
+            //     }
+            //     a {
+            //         display: block;
+            //     }
+            // }
+        }
+        .sub-menu {
+            position: relative;
+            top: 76px;
+            left: -18px;
+            width: 135px;
+            background-color: #fff;
+            padding: 14px 0;
+            box-sizing: border-box;
+            // max-height: 0px;
+            transition: all .3s;
+            // opacity: 0;
+            i {
+                width: 0;
+                height: 0;
+                border-width: 9px;
+                border-style: solid;
+                display: inline-block;
+                border-color: transparent transparent #fff transparent;
+                position: absolute;
+                top: -16px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            a {
+                font-size: 16px;
+                color: #999;
+                line-height: 30px;
+                display: block;
+                text-align: center;
+            }
+            a:hover {
+                color: #33cde5;
+            }
+
+        }
 	}
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20%, 0);
+    transform: translate3d(0, 20%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20%, 0);
+    transform: translate3d(0, 20%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeOutDown {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20%, 0);
+    transform: translate3d(0, 20%, 0);
+  }
+}
+
+@keyframes fadeOutDown {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20%, 0);
+    transform: translate3d(0, 20%, 0);
+  }
+}
+
+.fadeOutDown {
+  -webkit-animation-name: fadeOutDown;
+  animation-name: fadeOutDown;
 }
 </style>
 
