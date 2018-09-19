@@ -70,12 +70,18 @@
                 </li>
 				<li><nuxt-link to="/about">关于我们</nuxt-link></li> -->
                 
-				<li v-for="(nav, key) in navList" :key="key">
-                    <nuxt-link :to="nav.addr" class="first-a">{{nav.title}}<i v-if="nav.sub != ''"></i></nuxt-link>
+				<li v-for="(nav, key) in navList" :key="key" @hover="$emit('subHover')">
+                    <nuxt-link :to="nav.addr" class="first-a">
+                        {{nav.title}}
+                        <i v-if="nav.sub != ''"></i>
+                    </nuxt-link>
                 </li>
-                <div class="sub-menu" v-if="navList[hoverId].sub != ''">
+                <div class="sub-menu" @subHover="cs" v-show="navList[hoverId].sub != ''">
                     <i></i>
-                    <nuxt-link :to="sub.addr" v-for="(sub, key2) in navList[hoverId].sub" :key="key2">{{sub.title}}</nuxt-link>
+                    <nuxt-link :to="sub.addr" 
+                            v-for="(sub, key2) in navList[hoverId].sub" 
+                            :key="key2"
+                    >{{sub.title}}</nuxt-link>
                 </div>
 			</ul>
 		</div>
@@ -165,20 +171,34 @@ import '~/static/animate.css';
             }
         },
 		mounted() {
-            $(".VueHeader ul li").hover(function () {
-                // $(this).find(".sub-menu").addClass("animated fadeInUp");
-                // $(this).find(".sub-menu").removeClass("fadeOutDown");
-                var liIndex = $(".VueHeader ul li").index(this);
-                var liWidth = $(".VueHeader ul li").innerWidth();
-                $(".sub-menu").stop(false,true).animate({'left' : (liIndex * liWidth - 18) + 'px'},100);
-                this.hoverId = liIndex;
-                console.log(this.hoverId);
-            },function () {
-                // $(this).find(".sub-menu").removeClass("fadeInUp");
-                // $(this).find(".sub-menu").addClass("animated fadeOutDown");
-            })
+            // $(".VueHeader ul li").hover(function () {
+            //     // $(this).find(".sub-menu").addClass("animated fadeInUp");
+            //     // $(this).find(".sub-menu").removeClass("fadeOutDown");
+            //     var liIndex = $(".VueHeader ul li").index(this);
+            //     var liWidth = $(".VueHeader ul li").innerWidth();
+            //     $(".sub-menu").stop(false,true).animate({'left' : (liIndex * liWidth - 18) + 'px'},100);
+            //     this.hoverId = liIndex;
+            //     // this.set(this.hoverId, liIndex);
+            //     console.log(this.hoverId);
+            // },function () {
+            //     // $(this).find(".sub-menu").removeClass("fadeInUp");
+            //     // $(this).find(".sub-menu").addClass("animated fadeOutDown");
+            // })
 		},
         methods: {
+            cs () {
+                console.log(this.hoverId + '233');
+            }
+        },
+        computed: {
+            subMenu() {
+                console.log(111)
+                console.log(this.navList[this.hoverId].sub);
+                return this.navList[this.hoverId].sub;
+            }
+        },
+        watch: {
+            
         }
 	};
 
@@ -226,24 +246,13 @@ import '~/static/animate.css';
             a.nuxt-link-exact-active {
                 color: #33cde5;
             }
-		}
-		li:hover {
-			a.first-a {
+            a.first-a:hover {
 				color: #33cde5;
                 i {
                     background-position-y: -9px;
                 }
 			}
-            // .sub-menu {
-            //     max-height: 268px;
-            //     i {
-            //         display: inline-block;
-            //     }
-            //     a {
-            //         display: block;
-            //     }
-            // }
-        }
+		}
         .sub-menu {
             position: relative;
             top: 76px;
