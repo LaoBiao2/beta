@@ -333,6 +333,7 @@ export default {
                 display: block;
                 margin: 0 auto 10px;
                 background: url(/images/marketing/marketing_icon.png) 0 0 no-repeat;
+                transition: all .3s;
             }
             b {
                 font-size: 14px;
@@ -366,6 +367,11 @@ export default {
         .li-5 {
             i {
                 background-position-x: -723px;
+            }
+        }
+        li:hover {
+            i {
+                transform: translateY(-10px);
             }
         }
     }
@@ -548,6 +554,7 @@ export default {
                 background: url(/images/marketing/marketing_icon.png) 0 -330px no-repeat;
                 display: block;
                 margin: 0 auto 23px;
+                transition: all .3s;
             }
             span {
                 width: 84px;
@@ -604,6 +611,11 @@ export default {
             top: 54px;
             margin-left: -40px;
             background: url(/images/marketing/marketing_icon.png) -212px -258px no-repeat;
+        }
+        li:hover {
+            i {
+                transform: translateY(-10px);
+            }
         }
     }
 }

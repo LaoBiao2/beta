@@ -36,7 +36,8 @@
 .CustomService {
     position: fixed;
     right: 42px;
-    top: 30%;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 99;
     width: 68px;
     .floating {

@@ -203,6 +203,7 @@ export default {
             -moz-box-shadow: 1px 1px 18px rgba(204, 204, 204, .57); 
             box-shadow: 1px 1px 18px rgba(204, 204, 204, .57);
             margin-left: 70px;
+            transition: all .3s;
             i {
                 width: 90px;
                 height: 57px;
@@ -261,6 +262,9 @@ export default {
                 width: 51px;
                 background-position-x: -397px;
             }
+        }
+        li:hover {
+            transform: translateY(-10px);
         }
     }
 }
@@ -363,7 +367,7 @@ export default {
         li:hover {
             -webkit-box-shadow: 1px 1px 21px rgba(187, 187, 187, .38); 
             -moz-box-shadow: 1px 1px 21px rgba(187, 187, 187, .38); 
-            box-shadow: 1px 1px 21px rgba(187, 187, 187, 387);
+            box-shadow: 1px 1px 21px rgba(187, 187, 187, .38);
         }
         li:first-child {
             margin-left: 0;

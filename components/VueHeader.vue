@@ -70,13 +70,14 @@
                 </li>
 				<li><nuxt-link to="/about">关于我们</nuxt-link></li> -->
                 
-				<li v-for="(nav, key) in navList" :key="key" @hover="$emit('subHover')">
+				<li v-for="(nav, key) in navList" :key="key" @mouseenter="hoverIn(key)">
                     <nuxt-link :to="nav.addr" class="first-a">
                         {{nav.title}}
                         <i v-if="nav.sub != ''"></i>
                     </nuxt-link>
                 </li>
-                <div class="sub-menu" @subHover="cs" v-show="navList[hoverId].sub != ''">
+                
+                <div class="sub-menu" v-show="navList[hoverId].sub != ''">
                     <i></i>
                     <nuxt-link :to="sub.addr" 
                             v-for="(sub, key2) in navList[hoverId].sub" 
@@ -100,7 +101,7 @@ import '~/static/animate.css';
                         sub: []
                     }, {
                         title: '整合营销',
-                        addr: '/test',
+                        addr: '/marketing',
                         sub: []
                     }, {
                         addr: '/test',
@@ -149,7 +150,7 @@ import '~/static/animate.css';
                         ]
                     }, {
                         title: '网站优化',
-                        addr: '/test',
+                        addr: '/optimization',
                         sub: []
                     }, {
                         title: '企业建站',
@@ -167,7 +168,7 @@ import '~/static/animate.css';
                         sub: []
                     }, 
                 ],
-                hoverId: 0
+                hoverId: 3
             }
         },
 		mounted() {
@@ -186,15 +187,13 @@ import '~/static/animate.css';
             // })
 		},
         methods: {
-            cs () {
-                console.log(this.hoverId + '233');
-            }
-        },
-        computed: {
-            subMenu() {
-                console.log(111)
-                console.log(this.navList[this.hoverId].sub);
-                return this.navList[this.hoverId].sub;
+            hoverIn (index) {
+                // var liIndex = $(".VueHeader ul li").index(this);
+                var liIndex = index;
+                var liWidth = $(".VueHeader ul li").innerWidth();
+                $(".sub-menu").stop(false,true).animate({'left' : (liIndex * liWidth - 18) + 'px'},100);
+                this.hoverId = liIndex;
+                // console.log(this.hoverId);
             }
         },
         watch: {
@@ -204,7 +203,7 @@ import '~/static/animate.css';
 
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .VueHeader {
 	width: 100%;
 	height: 76px;
@@ -227,6 +226,7 @@ import '~/static/animate.css';
 	}
 	ul {
 		float: right;
+        position: relative;
 		li {
             text-align: center;
 			width: 104px;
@@ -254,7 +254,7 @@ import '~/static/animate.css';
 			}
 		}
         .sub-menu {
-            position: relative;
+            position: absolute;
             top: 76px;
             left: -18px;
             width: 135px;

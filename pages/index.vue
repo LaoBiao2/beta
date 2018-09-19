@@ -19,16 +19,16 @@
                 <div class="content">
                     <h4>我们的业务</h4>
                     <ul>
-                        <li class="li-1"><i></i>整合营销</li>
-                        <li class="li-2"><i></i>网络营销</li>
-                        <li class="li-3"><i></i>新闻营销</li>
-                        <li class="li-4"><i></i>媒体邀约</li>
-                        <li class="li-5"><i></i>视频推广</li>
-                        <li class="li-6 line-2"><i></i>移动营销</li>
-                        <li class="li-7 line-2"><i></i>网红直播</li>
-                        <li class="li-8 line-2"><i></i>口碑营销</li>
-                        <li class="li-9 line-2"><i></i>网站优化</li>
-                        <li class="li-10 line-2"><i></i>网站建设</li>
+                        <li class="li-1"><nuxt-link to=""><i></i>整合营销</nuxt-link></li>
+                        <li class="li-2"><nuxt-link to=""><i></i>网络营销</nuxt-link></li>
+                        <li class="li-3"><nuxt-link to=""><i></i>新闻营销</nuxt-link></li>
+                        <li class="li-4"><nuxt-link to=""><i></i>媒体邀约</nuxt-link></li>
+                        <li class="li-5"><nuxt-link to=""><i></i>视频推广</nuxt-link></li>
+                        <li class="li-6 line-2"><nuxt-link to=""><i></i>移动营销</nuxt-link></li>
+                        <li class="li-7 line-2"><nuxt-link to=""><i></i>网红直播</nuxt-link></li>
+                        <li class="li-8 line-2"><nuxt-link to=""><i></i>口碑营销</nuxt-link></li>
+                        <li class="li-9 line-2"><nuxt-link to=""><i></i>网站优化</nuxt-link></li>
+                        <li class="li-10 line-2"><nuxt-link to=""><i></i>网站建设</nuxt-link></li>
                     </ul>
                 </div>
             </div>
@@ -320,19 +320,22 @@ export default {
 .b1 {
     ul {
         width: 1080px;
-        margin-top: 47px;
+        margin: 47px auto 0;
         li {
             width: 20%;
             height: 90px;
-            font-size: 16px;
-            color: #666;
-            i {
-                width: 47px;
-                height: 48px;
-                display: block;
-                margin: 0 auto 26px;
-                background: url(/images/index/index_icon.png) 0 0 no-repeat;
+            a {
+                font-size: 16px;
+                color: #666;
+                i {
+                    width: 47px;
+                    height: 48px;
+                    display: block;
+                    margin: 0 auto 26px;
+                    background: url(/images/index/index_icon.png) 0 0 no-repeat;
+                }
             }
+            
         }
         .li-2, .li-7 {
             i {
@@ -379,6 +382,11 @@ export default {
         .li-10 {
             i {
                 width: 55px;
+            }
+        }
+        li:hover {
+            a {
+                color: #33cde5;
             }
         }
     }
@@ -450,6 +458,7 @@ export default {
                 display: block;
                 margin-bottom: 28px;
                 background: url(/images/index/index_icon.png) 0 -308px no-repeat;
+                transition: all .3s;
             }
             span {
                 font-size: 24px;
@@ -485,6 +494,11 @@ export default {
         .li-6 {
             i {
                 background-position-x: -572px;
+            }
+        }
+        li:hover {
+            i {
+                transform: translateY(-10px);
             }
         }
     }
@@ -699,13 +713,18 @@ export default {
 }
 </style>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .b4 {
     .swiper-container {
+        padding-bottom: 30px;
         .swiper-pagination-bullets {
-            // bottom: 100px;
-            margin-top: 58px;
+            position: relative;
+            width: 1280px;
+            bottom: -30px;
+            // margin-top: 58px;
             height: 37px;
+            display: table-cell;
+            vertical-align: bottom;
             .swiper-pagination-bullet {
                 width: 1px;
                 height: 23px;
