@@ -8,7 +8,6 @@
 </template>
 
 <script>
-import '~/static/common.css';
 import VueHeader from "~/components/VueHeader.vue";
 import VueFooter from "~/components/VueFooter.vue";
 import CustomService from "~/components/CustomService.vue";

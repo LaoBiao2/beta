@@ -713,7 +713,7 @@ export default {
 }
 </style>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .b4 {
     .swiper-container {
         padding-bottom: 30px;
