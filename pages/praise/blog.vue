@@ -3,7 +3,7 @@
         <div>
             <div class="banner">
                 <div class="banner-bg">
-                    <img src="/images/praise/blog/banner.jpg" alt="">
+                    <img src="/images/praise/banner.jpg" alt="">
                 </div>
                 <div class="banner-content content">
                     <h2>博客营销</h2>
@@ -142,18 +142,22 @@ export default {
     created () {
         this.$nextTick(() => {
             // this.scroll = new BScroll(this.$refs.wrapper, {})
-            if (!this.scroll) {
-            // this.scroll = new BScroll(this.$refs.wrapper, {})
             this.scroll = new BScroll(this.$refs.wrapper,{
                 click: true,
                 disableMouse: false,
                 disableTouch: true,
                 mouseWheel: true,
             });
-            console.log(this.scroll)
-            }
-
-      })
+            // if (!this.scroll) {
+            // this.scroll = new BScroll(this.$refs.wrapper,{
+            //     click: true,
+            //     disableMouse: false,
+            //     disableTouch: true,
+            //     mouseWheel: true,
+            // });
+            // console.log(this.scroll)
+            // }
+        })
     }
 }
 </script>
@@ -244,7 +248,7 @@ export default {
                 position: absolute;
                 left: 0;
                 top: 14px;
-                background: url(/images/praise/blog/blog_icon.png) 0 0 no-repeat;
+                background: url(/images/praise/blog_icon.png) 0 0 no-repeat;
             }
             b {
                 width: 256px;
@@ -357,18 +361,6 @@ export default {
             }
         }
     }
-    .content {
-        position: relative;
-        .b2-i {
-            width: 546px;
-            height: 386px;
-            display: inline-block;
-            background: url(/images/website/b2_img.png) no-repeat right;
-            position: absolute;
-            right: 0;
-            bottom: 0;
-        }
-    }
 }
 
 .b3 {
@@ -391,7 +383,7 @@ export default {
                 height: 60px;
                 display: block;
                 margin: 0 auto;
-                background: url(/images/praise/blog/blog_icon.png) 0 -96px no-repeat;
+                background: url(/images/praise/blog_icon.png) 0 -96px no-repeat;
                 position: absolute;
                 top: 47px;
                 left: 26px;
@@ -447,7 +439,7 @@ export default {
                 height: 67px;
                 display: block;
                 margin: 0 auto;
-                background: url(/images/praise/blog/blog_icon.png) 0 -214px no-repeat;
+                background: url(/images/praise/blog_icon.png) 0 -214px no-repeat;
                 position: absolute;
                 top: 0;
                 left: 0;
