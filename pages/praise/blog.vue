@@ -49,24 +49,26 @@
             <div class="box b2">
                 <div class="content">
                     <h4>SNS优势</h4>
-                    <ul>
-                        <li class="li-1">
-                            <b><i></i>首先：SNS营销可以满足企业不同的营销策略</b>
-                            <p>作为一个不断创新和发展的营销模式，越来越多的企业尝试着在SNS网站上施展拳脚，无论是开展各种各样的线上的活动（例如：悦活品牌的种植大赛、伊利舒化奶的开心牧场等）产品植入（例如：地产项目的房子植入、手机作为送礼品的植入等）、还是市场调研（在目标用户集中的城市开展调查了解用户对产品和服务的意见）、以及病毒营销等（植入了企 业元素的视频或内容可以在用户中像病毒传播一样迅速的被分享和转帖），所有这些都可以在这里实现，为什么这么说呢？因为SNS最大的特点就是可以充分展示人与人之间的互动，而这恰恰是一切营销的基础所在。</p>
-                        </li>
-                        <li class="li-2">
-                            <b><i></i>其次：SNS营销可以有效降低企业的营销成本</b>
-                            <p>SNS社交网络的“多对多”信息传递模式具有更强的互动性，受到更多人的关注。随着网民网络行为的日益成熟，用户更乐意主动获取信息和分享信息，社区用户显示出高度的参与性、分享性与互动性，SNS社交网络营销传播的主要媒介是用户主要方式是“众口相传”，因此与传统广告形式相比，无须大量的广告投入，相反因为用户的参与性、分享性与互动性的特点很容易加深对一个品牌和产品的认知，容易形成深刻的印象，从媒体价值来分析形成好的传播效</p>
-                        </li>
-                        <li class="li-3">
-                            <b><i></i>再次：可以实现目标用户的精准营销</b>
-                            <p>SNS社交网络中的用户通常都是认识的朋友，用户注册的数据相对来说都是较真实的，企业在开展网络营销的时候可以很容易对目标受众按照地域、收入状况等进行用户的筛选，来选择哪些是自己的用户，从而有针对性的与这些用户进行宣传和互动。如果企业营销的经费不多，但又希望能够获得一个比较好的效果的时候，可以只针对部分区域开展营销，例如只针对北、上、广的用户开展线上活动，从而实现目标用户的精准营销。</p>
-                        </li>
-                        <li class="li-4">
-                            <b><i></i>最后：SNS营销是真正符合网络用户需求的营销方式</b>
+                    <div class="wrapper" ref="wrapper">
+                        <ul>
+                            <li class="li-1">
+                                <b><i></i>首先：SNS营销可以满足企业不同的营销策略</b>
+                                <p>作为一个不断创新和发展的营销模式，越来越多的企业尝试着在SNS网站上施展拳脚，无论是开展各种各样的线上的活动（例如：悦活品牌的种植大赛、伊利舒化奶的开心牧场等）产品植入（例如：地产项目的房子植入、手机作为送礼品的植入等）、还是市场调研（在目标用户集中的城市开展调查了解用户对产品和服务的意见）、以及病毒营销等（植入了企 业元素的视频或内容可以在用户中像病毒传播一样迅速的被分享和转帖），所有这些都可以在这里实现，为什么这么说呢？因为SNS最大的特点就是可以充分展示人与人之间的互动，而这恰恰是一切营销的基础所在。</p>
+                            </li>
+                            <li class="li-2">
+                                <b><i></i>其次：SNS营销可以有效降低企业的营销成本</b>
+                                <p>SNS社交网络的“多对多”信息传递模式具有更强的互动性，受到更多人的关注。随着网民网络行为的日益成熟，用户更乐意主动获取信息和分享信息，社区用户显示出高度的参与性、分享性与互动性，SNS社交网络营销传播的主要媒介是用户主要方式是“众口相传”，因此与传统广告形式相比，无须大量的广告投入，相反因为用户的参与性、分享性与互动性的特点很容易加深对一个品牌和产品的认知，容易形成深刻的印象，从媒体价值来分析形成好的传播效</p>
+                            </li>
+                            <li class="li-3">
+                                <b><i></i>再次：可以实现目标用户的精准营销</b>
+                                <p>SNS社交网络中的用户通常都是认识的朋友，用户注册的数据相对来说都是较真实的，企业在开展网络营销的时候可以很容易对目标受众按照地域、收入状况等进行用户的筛选，来选择哪些是自己的用户，从而有针对性的与这些用户进行宣传和互动。如果企业营销的经费不多，但又希望能够获得一个比较好的效果的时候，可以只针对部分区域开展营销，例如只针对北、上、广的用户开展线上活动，从而实现目标用户的精准营销。</p>
+                            </li>
+                            <li class="li-4">
+                                <b><i></i>最后：SNS营销是真正符合网络用户需求的营销方式</b>
                             <p>SNS社交网络营销模式的迅速发展恰恰是符合了网络用户的真实需求，参与、分享和互动，它代表了网络用户的特点，也是符合网络营销发展的新趋势，没有任何一个媒体能够把人与人之间的关系拉的如此紧密。无论是朋友的一篇日记、推荐的一个视频、参与的一个活动、还是朋友新结识的朋友都会让人们在第一时间及时的了解和关注到身边朋友们的动态，并与他们分享感受。只有符合网络用户需求的营销模式才能在网络营销中帮助企业发挥更大的作用。</p>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="box b3">
@@ -98,51 +100,32 @@
             </div>
             <div class="box b4">
                 <div class="content">
-                    <h4>优秀的项目是这样出来的</h4>
-                    <h5>我们一直致力于提供专业的设计解决方案，服务平台涵盖了互联网平台、移动平台，我们用设计为您赢得商机 </h5>
-                    <ul class="clearfix">
-                        <li class="active">
-                            <b class="first-b">1</b>
-                            <div class="txt">
-                                <b>需求沟通</b>
-                                <span>详细了解客户 产品和业务</span>
-                            </div>
+                    <h4>SNS营销项目</h4>
+                    <ul class="clearfix ul-1">
+                        <li class="li-1">
+                            <i></i>
+                            <b>SNS文章发布： </b>
+                            <p>我们专业的团队高质高效帮您在QQ空间人人网 开心网豆瓣网朋友网及众多博客空间里发布您的宣传文章。</p>
                         </li>
-                        <li>
-                            <b class="first-b">2</b>
-                            <div class="txt">
-                                <b>交互设计</b>
-                                <span>根据产品设计 网页功能</span>
-                            </div>
+                        <li class="li-2">
+                            <i></i>
+                            <b>SNS名人推广： </b>
+                            <p>我们拥有众多的一手名人渠道，帮你在SNS名人的空间博客里发布文章。达到渠道的宣传效果。</p>
                         </li>
-                        <li>
-                            <b class="first-b">3</b>
-                            <div class="txt">
-                                <b>视觉创意</b>
-                                <span>进行网站页面 美化及创意设计</span>
-                            </div>
-                        </li>
-                        <li>
-                            <b class="first-b">4</b>
-                            <div class="txt">
-                                <b>前端制作</b>
-                                <span>制作SEO友好 的html文件</span>
-                            </div>
-                        </li>
-                        <li>
-                            <b class="first-b">5</b>
-                            <div class="txt">
-                                <b>技术开发</b>
-                                <span>开发后台功能，测试网站功能</span>
-                            </div>
-                        </li>
-                        <li>
-                            <b class="first-b">6</b>
-                            <div class="txt">
-                                <b>测试反馈</b>
-                            </div>
+                        <li class="li-3">
+                            <i></i>
+                            <b>SNS整合营销： </b>
+                            <p>专业团队合作渠道，在SNS网站上进行综合的全方位整合营销。</p>
                         </li>
                     </ul>
+                    <div class="txt">
+                        <p>*SNS营销注意事项</p>
+                        <ul>
+                            <li><i></i>SNS营销价钱 发布文章价钱，SNS名人营销价钱 。这些都要及时咨询我们的营销顾问，才能知道最新最详细的价钱。</li>
+                            <li><i></i>流程：联系我们——策划方案——签订合同 支付款项——SNS营销——汇报结果（交易完成）。</li>
+                            <li><i></i>文章内容一定要合法合规，另外不做炒作营销。   </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -150,10 +133,22 @@
 </template>
 
 <script>
+import BScroll from 'better-scroll';
 export default {
     data() {
         return {
         }
+    },
+    created () {
+        this.$nextTick(() => {
+            // this.scroll = new BScroll(this.$refs.wrapper, {})
+            if (!this.scroll) {
+            // this.scroll = new BScroll(this.$refs.wrapper, {})
+            this.scroll = new BScroll(this.$refs.wrapper);
+            console.log(this.scroll)
+            }
+
+      })
     }
 }
 </script>
@@ -265,7 +260,9 @@ export default {
             min-height: 196px;
         }
         .li-1 {
-            width: 49px;
+            i {
+                width: 49px;
+            }
         }
         .li-2 {
             i {
@@ -294,10 +291,12 @@ export default {
 .b2 {
     background-color: #f5f5f5;
     padding: 67px 0 64px;
-    ul {
+    div.wrapper {
         margin-top: 34px;
         height: 470px;
-        overflow: scroll;
+        overflow: hidden;
+    }
+    ul {
         li {
             display: block;
             padding: 45px 48px 45px 65px;
@@ -370,54 +369,58 @@ export default {
 .b3 {
     padding: 70px 0;
     ul {
-        width: 932px;
-        margin: 33px auto 0;
+        margin: 52px auto 0;
         li {
             float: left;
-            width: 173px;
-            height: 161px;
+            width: 565px;
+            height: 234px;
             border-radius: 10px;
-            padding: 20px 20px 0;
-            margin-left: 80px;
-            transition: all .3s;
-            i {
-                width: 75px;
-                height: 61px;
-                display: block;
-                margin: 0 auto 10px;
-                background: url(/images/website/website_icon.png) 0 -136px no-repeat;
-            }
-            p {
-                font-size: 14px;
-                color: #666;
-                line-height: 20px;
-            }
-        }
-        .li-2 {
-            i {
-                width: 57px;
-                background-position-x: -143px;
-            }
-        }
-        .li-3 {
-            i {
-                width: 57px;
-                background-position-x: -262px;
-            }
-        }
-        .li-4 {
-            i {
-                width: 58px;
-                background-position-x: -397px;
-            }
-        }
-        li:hover {
+            padding: 20px 40px 20px 110px;
+            position: relative;
+            text-align: justify;
             -webkit-box-shadow: 1px 1px 21px rgba(187, 187, 187, .38); 
             -moz-box-shadow: 1px 1px 21px rgba(187, 187, 187, .38); 
             box-shadow: 1px 1px 21px rgba(187, 187, 187, .38);
+            i {
+                width: 59px;
+                height: 60px;
+                display: block;
+                margin: 0 auto;
+                background: url(/images/praise/blog/blog_icon.png) 0 -96px no-repeat;
+                position: absolute;
+                top: 47px;
+                left: 26px;
+            }
+            b {
+                font-size: 18px;
+                color: #666;
+                margin-bottom: 4px;
+                display: block;
+            }
+            p {
+                font-size: 16px;
+                color: #999;
+                line-height: 30px;
+            }
         }
-        li:first-child {
-            margin-left: 0;
+        .li-2 {
+            margin-left: 55px;
+            i {
+                background-position-x: -123px;
+            }
+        }
+        .li-3 {
+            margin-top: 37px;
+            i {
+                background-position-x: -241px;
+            }
+        }
+        .li-4 {
+            margin-top: 37px;
+            margin-left: 55px;
+            i {
+                background-position-x: -362px;
+            }
         }
     }
 }
@@ -425,64 +428,76 @@ export default {
 .b4 {
     padding: 67px 0 74px;
     background-color: #f5f5f5;
-    ul {
-        margin-top: 52px;
+    ul.ul-1 {
+        margin: 62px auto 0;
         li {
-            width: 565px;
-            height: 234px;
-            background-color: #fff;
-            border-radius: 10px;
-            // -webkit-box-shadow: 1px 1px 1px #fea32d; 
-            // -moz-box-shadow: 1px 1px 1px #fea32d; 
-            // box-shadow: 1px 1px 1px #fea32d;
-            text-align: left;
-            margin-left: -22px;
-            padding-left: 48px;
+            width: 33.3%;
+            position: relative;
+            text-align: justify;
+            padding: 0 93px 0 115px;
             box-sizing: border-box;
             float: left;
-            b.first-b {
-                font-size: 60px;
-                color: #a2a2a2;
-                float: left;
-                line-height: 117px;
-                margin-right: 15px;
+            i {
+                width: 78px;
+                height: 67px;
+                display: block;
+                margin: 0 auto;
+                background: url(/images/praise/blog/blog_icon.png) 0 -214px no-repeat;
+                position: absolute;
+                top: 0;
+                left: 0;
             }
-            .txt {
-                width: 100px;
-                display: table-cell;
-                height: 117px;
-                vertical-align: middle;
-                b {
-                    font-size: 18px;
-                    color: #666;
-                    display: block;
-                    margin-bottom: 13px;
-                }
-                span {
-                    font-size: 14px;
-                    color: #999;
-                    line-height: 20px;
-                    display: block;
-                }
+            b {
+                font-size: 18px;
+                color: #666;
+                margin-bottom: 4px;
+                display: block;
+            }
+            p {
+                font-size: 16px;
+                color: #999;
+                line-height: 30px;
             }
         }
-        li:first-child {
-            width: 221px;
-            background-position-x: 0px;
-            padding-left: 37px;
-            margin-left: 0;
-        }
-        li:hover, li.active {
-            background-position-y: -454px;
-            b.first-b {
-                color: #fff;
+        .li-2 {
+            i {
+                background-position-x: -134px;
             }
-            .txt {
-                b {
-                    color: #057081;
-                }
-                span {
-                    color: #fff;
+        }
+        .li-3 {
+            i {
+                background-position-x: -241px;
+            }
+        }
+    }
+    .txt {
+        margin-top: 64px;
+        background-color: #fff;
+        padding: 38px 46px;
+        box-sizing: border-box;
+        text-align: left;
+        border-radius: 10px;
+        p {
+            color: #666;
+            font-size: 18px;
+            line-height: 30px;
+        }
+        ul {
+            li {
+                font-size: 18px;
+                color: #999;
+                display: block;
+                line-height: 30px;
+                position: relative;
+                i {
+                    width: 5px;
+                    height: 5px;
+                    display: block;
+                    border-radius: 50%;
+                    background-color: #e1292a;
+                    position: absolute;
+                    top: 12px;
+                    left: -14px;
                 }
             }
         }
