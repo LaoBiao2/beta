@@ -144,7 +144,12 @@ export default {
             // this.scroll = new BScroll(this.$refs.wrapper, {})
             if (!this.scroll) {
             // this.scroll = new BScroll(this.$refs.wrapper, {})
-            this.scroll = new BScroll(this.$refs.wrapper);
+            this.scroll = new BScroll(this.$refs.wrapper,{
+                click: true,
+                disableMouse: false,
+                disableTouch: true,
+                mouseWheel: true,
+            });
             console.log(this.scroll)
             }
 
